@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <title>Nehemiah: Akan Naming system</title>
+    <title>Nehemiah: Akan Naming System</title>
     <link rel="stylesheet" href="style.css">
+    <script src="birthday.js" defer></script>
 </head>
 
 <body>
@@ -13,13 +14,23 @@
         <a href="#">Contact</a>
     </div>
 
-    <h1>Enter your information</h1>
+    <h1>Enter your D.O.B</h1>
     <div class="container">
-        <form>
-            <label for="name">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" placeholder="Enter your D.O.B">
+        <form id="userForm">
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob" placeholder="Enter your D.O.B">
             <br>
-            <button type="submit">Submit</button>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">--Select gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                
+            </select>
+            <br>
+            <br>
+            
+            <button type="button" onclick="validateDate()">Submit</button>
         </form>
 
         <aside class="aside">
@@ -31,6 +42,8 @@
     <footer class="footer">
         &copy; 2024 Nehemiah Cheburet
     </footer>
+
+   
 </body>
 
 </html>
