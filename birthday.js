@@ -33,12 +33,12 @@ function validateAndMap() {
 
             // Akan names based on day of the week
             var akanNames = [
-                ["Kwasi", "Akua"], // Sunday
-                ["Kojo", "Adjoa"], // Monday
-                ["Kwabena", "Abena"], // Tuesday
+                ["Kwasi", "Akosua"], // Sunday
+                ["Kwadwo", "Adwoa"], // Monday
+                ["Kwabena", "Abenaa"], // Tuesday
                 ["Kwaku", "Akua"], // Wednesday
                 ["Yaw", "Yaa"], // Thursday
-                ["Kofi", "Afia"], // Friday
+                ["Kofi", "Afua"], // Friday
                 ["Kwame", "Ama"] // Saturday
             ];
 
