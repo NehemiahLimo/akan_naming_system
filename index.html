@@ -16,26 +16,25 @@
 
     <h1>Enter your D.O.B</h1>
     <div class="container">
-        <form id="userForm">
-            <label for="dob">Date of Birth:</label>
-            <input type="text" id="dob" name="dob" placeholder="Enter your D.O.B">
-            <br>
-            <label for="gender">Gender:</label>
+        <form id="userForm"  onsubmit="event.preventDefault(); validateAndMap();">
+            <label for="dob">Enter your Date of Birth (YYYY-MM-DD):</label>
+            <input type="text" id="dob" name="dob" placeholder="YYYY/MM/DD">
+    
+            <label for="gender">Select your Gender:</label>
             <select id="gender" name="gender">
                 <option value="">--Select gender--</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
-                
             </select>
             <br>
             <br>
-            
-            <button type="button" onclick="validateDate()">Submit</button>
+    
+            <button type="submit">Submit</button>
         </form>
 
         <aside class="aside">
-            <h2>Important Information</h2>
-            <p>This is some important information you should keep in mind.</p>
+            <h2>Your Akan name</h2>
+            <p id="result"></p>
         </aside>
     </div>
 
